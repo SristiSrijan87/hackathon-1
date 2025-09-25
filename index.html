@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel India</title>
+  <style>
+    * {
+        margin:0; 
+        padding:0; box-sizing:border-box;
+        font-family:Arial, sans-serif;}
+
+    body {
+        background:#f8f9fa; 
+        color:#333; 
+        line-height:1.6;}
+
+   
+    nav {
+
+        background:#ff5733;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 10%;
+        position:sticky; top:0; z-index:1000;
+    }
+    nav .logo {
+        color:#fff;
+        font-size:1.5rem;
+        font-weight:bold;
+        }
+    nav ul {
+        list-style:none;
+        display:flex; 
+        gap:20px;
+    }
+    nav ul li a {
+        color:#fff; 
+        text-decoration:none; 
+        font-weight:bold;
+    }
+    nav ul li a:hover {
+        color:#ffe6e0;}
+
+   
+    header {
+      background:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height:70vh;
+       display:flex;
+       flex-direction:column; 
+       justify-content:center; 
+       align-items:center; 
+       color:#fff; 
+       text-align:center;
+    }
+    header h1 {
+        font-size:3rem; 
+        margin-bottom:1rem; 
+        text-shadow:2px 2px 6px rgba(0,0,0,0.7);
+    }
+    header p {
+        font-size:1.2rem; 
+        max-width:700px; 
+        text-shadow:1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    
+    section {
+        padding:60px 10%; 
+        text-align:center;
+    }
+    section h2 {
+        margin-bottom:40px; 
+        color:#ff5733;}
+
+   
+    .grid {
+        display:grid; 
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); 
+        gap:20px;}
+    .card {
+      background:#fff; 
+      border-radius:10px; 
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      overflow:hidden; 
+      transition:0.3s;
+    }
+    
+    .card img {
+        width:100%; 
+        height:200px; 
+        object-fit:cover;
+    }
+    .card h3 {
+        padding:15px 10px 5px;
+    }
+    .card p {
+        padding:0 10px 20px; 
+        font-size:0.95rem; 
+        color:#555;}
+
+    
+    .service {
+        padding:20px;
+        background:#fff; 
+        border-radius:10px; 
+        box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+        margin-bottom:10px; 
+        color:#333;}
+
+    
+    .gallery img {
+      width:100%; 
+      border-radius:10px; 
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      
+    }
+    .gallery img:hover {
+        transform:scale(1.05);
+    }
+
+   
+    .testimonial {
+      background:#fff; 
+      padding:20px; 
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      font-style:italic;
+    }
+    .testimonial h4 {
+        margin-top:10px; 
+        color:#ff5733;
+    }
+
+    
+    form {
+        max-width:600px; 
+        margin:0 auto; 
+        text-align:left;
+    }
+    form input, form textarea {
+      width:100%; 
+      padding:10px; 
+      margin:10px 0; 
+      border:1px solid #ccc; 
+      border-radius:5px;
+    }
+    form button {
+      background:#ff5733; 
+      color:#fff; 
+      padding:10px 20px; 
+      border:none; 
+      border-radius:5px;
+      cursor:pointer; 
+      font-weight:bold;
+    }
+    form button:hover {
+        background:#e14a26;}
+
+   
+    footer {
+        background:#333; 
+        color:#fff; 
+        text-align:center; 
+        padding:20px;}
+    footer a {
+        color:#ff5733; 
+        text-decoration:none; 
+        margin:0 10px;}
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <div class="logo">Travel India</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <header>
+    <h1>Explore Incredible India</h1>
+    <p>From the snowy Himalayas to the tropical beaches, discover India’s beauty, history, and culture.</p>
+  </header>
+
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are passionate travelers bringing you the best tours and experiences across India. Whether you love mountains, beaches, or cultural heritage, we have a journey designed for you.</p>
+  </section>
+
+ 
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal">
+        <h3>Agra - Taj Mahal</h3>
+        <p>Symbol of eternal love and Mughal architecture masterpiece.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507568237455-032c8ddb4b29?auto=format&fit=crop&w=800&q=80" alt="Kerala">
+        <h3>Kerala - Backwaters</h3>
+        <p>Relax in houseboats and explore lush greenery.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576506295222-2d2e6b82c2dc?auto=format&fit=crop&w=800&q=80" alt="Jaipur">
+        <h3>Jaipur - Pink City</h3>
+        <p>Known for royal palaces, colorful bazaars, and forts.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Goa">
+        <h3>Goa - Beaches</h3>
+        <p>Famous for beaches, nightlife, and Portuguese heritage.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service">
+        <h3>Custom Tours</h3>
+        <p>Plan your dream trip with flexible itineraries.</p>
+      </div>
+      <div class="service">
+        <h3>Hotel Booking</h3>
+        <p>Find the best stays at affordable prices.</p>
+      </div>
+      <div class="service">
+        <h3>Travel Guide</h3>
+        <p>Experienced guides to make your journey smooth.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid gallery">
+      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="Delhi">
+      <img src="https://images.unsplash.com/photo-1573496529574-be85d6a60704?auto=format&fit=crop&w=800&q=80" alt="Himalayas">
+      <img src="https://images.unsplash.com/photo-1542131596-dea5384842c4?auto=format&fit=crop&w=800&q=80" alt="Varanasi">
+    </div>
+  </section>
+
+
+  <section id="testimonials">
+    <h2>What Our Travelers Say</h2>
+    <div class="grid">
+      <div class="testimonial">
+        "The trip was well organized, and I loved every moment in Rajasthan!"
+        <h4>- Ananya</h4>
+      </div>
+      <div class="testimonial">
+        "Kerala backwaters were breathtaking. Excellent service!"
+        <h4>- Rahul</h4>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 Travel India. All rights reserved.</p>
+    <p>Follow us: 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
